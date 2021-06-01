@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		body{
+				background-image: url('lib.jpg');
+  				background-repeat: no-repeat;
+  				background-size: 100% 100%;
+		}
+		h1{
+			color: blue;
+			text-align: center;
+			border: solid 1px blue;
+		}
+		.form{
+			width: 50%;
+			padding: 30px;
+			margin-left: 25%;
+			margin-right: 25%;
+			background-color: cyan;
+			opacity: 0.9;
+		}
+		table{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="form">
+		<h1>Registration Form</h1>
+		<form method="post">
+			<table>
+			<tr>
+				<td><label for="name"><b>Name</b></label></td>
+				<td><input type="text" name="name"><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="psw"><b>Password</b></label></td>
+    			<td><input type="password"name="psw"><br><br></td>
+   			</tr>
+   			<tr>
+				<td><label for="email"><b>Email</b></label></td>
+    			<td><input type="text"name="email"><br><br></td>
+    		</tr>
+    		<tr>
+				<td><label for="ph"><b>Phone Number</b></label></td>
+				<td><input type="text" name="ph"><br><br></td>
+			</tr>
+			<tr>
+				<td><label><b>Gender</b></label></td>
+				<td><input type="radio" name="gender" value="male">
+  				<label for="male">Male</label>
+  				<input type="radio" name="gender" value="female">
+  				<label for="female">Female</label><br><br></td>
+  			</tr>
+  			<tr>
+  				<td><label for="dob"><b>Date of Birth</b></label></td>
+  				<td><input type="text" name="dob" placeholder="dd-mm-yyyy"><br><br></td>
+  			</tr>
+  			<tr>
+  				<td><label><b>Languages Known</b></label></td>
+  				<td><input type="checkbox" name="l1" value="English">
+  				<label for="l1"> English</label>
+  				<input type="checkbox" name="l2" value="Telugu">
+  				<label for="l2"> Telugu</label>
+  				<input type="checkbox" name="l3" value="Hindi">
+  				<label for="l3"> Hindi</label>
+  				<input type="checkbox" name="l4" value="Tamil">
+  				<label for="l4"> Tamil</label><br><br></td>
+  			</tr>
+  			<tr>
+  				<td><label for="add"><b>Address</b></label></td>
+  				<td><textarea cols="60" rows="5" name="add" value="address"></textarea><br><br></td>
+  			</tr>
+  			<tr>
+  				<td><label><b>District</b></label></td>
+				<td><select>  
+					<option value="an">Ananthapur</option>  
+					<option value="kr">Krishna</option>  
+				</select><br><br></td>  
+			</tr>
+			<tr>
+				<td><label><b>State</b></label></td>   
+				<td><select>  
+					<option value="ap">Andhra Pradesh</option>  
+					<option value="kr">Kerala</option>  
+				</select><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="pin"><b>Pincode</b></label></td>
+				<td><input type="text" name="pin"><br><br></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="Submit" value="Submit"/> 
+				<input type="Reset" value="Reset"/></td>  
+			</tr>
+			</table> 
+		</form>
+	</div>
+</body>
+</html>
